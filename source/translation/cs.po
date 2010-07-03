@@ -1,0 +1,126 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: you@your.org\n"
+"POT-Creation-Date: 2010-07-03 19:26+0100\n"
+"PO-Revision-Date: 2010-07-03 19:26+0100\n"
+"Last-Translator: you <you@your.org>\n"
+"Language-Team: Team <yourteam@your.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: confessor/Application.js:35
+msgid "request aborted"
+msgstr "požadavek zrušen"
+
+#: confessor/Application.js:38
+msgid "request failed"
+msgstr "požadavek selhal"
+
+#: confessor/Application.js:41
+msgid "sending request"
+msgstr "odesílám požadavek"
+
+#: confessor/Application.js:44
+msgid "request timeout"
+msgstr "požadavek vypršel"
+
+#: confessor/Application.js:68
+msgid "Ready"
+msgstr "Připraven"
+
+#: confessor/Application.js:70
+msgid "No saved confessions"
+msgstr "Žádné uložené zpovědi"
+
+#: confessor/Application.js:75
+msgid "Title"
+msgstr "Nadpis"
+
+#: confessor/Application.js:76
+msgid "Author"
+msgstr "Autor"
+
+#: confessor/Application.js:77
+msgid "Comments"
+msgstr "Komentáře"
+
+#: confessor/Application.js:78
+msgid "News"
+msgstr "Novinky"
+
+#: confessor/Application.js:91
+msgid "New"
+msgstr "Přidat"
+
+#: confessor/Application.js:94
+msgid "Confession number"
+msgstr "Číslo zpovědi"
+
+#: confessor/Application.js:102
+msgid "is already saved"
+msgstr "už je uloženo"
+
+#: confessor/Application.js:104
+msgid "Trying to fetch"
+msgstr "Zkouším načíst"
+
+#: confessor/Application.js:111
+msgid "View"
+msgstr "Ukázat"
+
+#: confessor/Application.js:115
+msgid "Delete"
+msgstr "Smazat"
+
+#: confessor/Application.js:119
+msgid "Update"
+msgstr "Aktualizovat"
+
+#: confessor/Application.js:128
+msgid "Update started"
+msgstr "Zahájena aktualizace"
+
+#: confessor/Application.js:154
+msgid "Confessor"
+msgstr "Zpovědník"
+
+#: confessor/Application.js:160
+msgid "Starting"
+msgstr "Startuji"
+
+#: confessor/Application.js:196
+msgid "added"
+msgstr "přidáno"
+
+#: confessor/Application.js:199 confessor/Application.js:248
+msgid "Confession not found"
+msgstr "Zpověď nenalezena"
+
+#: confessor/Application.js:213
+msgid "deleted"
+msgstr "smazáno"
+
+#: confessor/Application.js:220
+msgid "Updating"
+msgstr "Aktualizuji"
+
+#: confessor/Application.js:242
+msgid "updated"
+msgstr "aktualizováno"
+
+#: confessor/Application.js:244
+msgid "unchanged"
+msgstr "nezměněno"
+
+msgid "one of one row"
+msgid_plural "%1 of %2 rows"
+msgstr[0] "jediný řádek"
+msgstr[1] "řádek %1 z %2"
+
+msgid "one row"
+msgid_plural "%1 rows"
+msgstr[0] "jeden řádek"
+msgstr[1] "%1 řádků"

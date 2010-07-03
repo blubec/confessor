@@ -1,0 +1,116 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: you@your.org\n"
+"POT-Creation-Date: 2010-07-03 19:26+0100\n"
+"PO-Revision-Date: 2010-07-03 19:26+0100\n"
+"Last-Translator: you <you@your.org>\n"
+"Language-Team: Team <yourteam@your.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: confessor/Application.js:35
+msgid "request aborted"
+msgstr ""
+
+#: confessor/Application.js:38
+msgid "request failed"
+msgstr ""
+
+#: confessor/Application.js:41
+msgid "sending request"
+msgstr ""
+
+#: confessor/Application.js:44
+msgid "request timeout"
+msgstr ""
+
+#: confessor/Application.js:68
+msgid "Ready"
+msgstr ""
+
+#: confessor/Application.js:70
+msgid "No saved confessions"
+msgstr ""
+
+#: confessor/Application.js:75
+msgid "Title"
+msgstr ""
+
+#: confessor/Application.js:76
+msgid "Author"
+msgstr ""
+
+#: confessor/Application.js:77
+msgid "Comments"
+msgstr ""
+
+#: confessor/Application.js:78
+msgid "News"
+msgstr ""
+
+#: confessor/Application.js:91
+msgid "New"
+msgstr ""
+
+#: confessor/Application.js:94
+msgid "Confession number"
+msgstr ""
+
+#: confessor/Application.js:102
+msgid "is already saved"
+msgstr ""
+
+#: confessor/Application.js:104
+msgid "Trying to fetch"
+msgstr ""
+
+#: confessor/Application.js:111
+msgid "View"
+msgstr ""
+
+#: confessor/Application.js:115
+msgid "Delete"
+msgstr ""
+
+#: confessor/Application.js:119
+msgid "Update"
+msgstr ""
+
+#: confessor/Application.js:128
+msgid "Update started"
+msgstr ""
+
+#: confessor/Application.js:154
+msgid "Confessor"
+msgstr ""
+
+#: confessor/Application.js:160
+msgid "Starting"
+msgstr ""
+
+#: confessor/Application.js:196
+msgid "added"
+msgstr ""
+
+#: confessor/Application.js:199 confessor/Application.js:248
+msgid "Confession not found"
+msgstr ""
+
+#: confessor/Application.js:213
+msgid "deleted"
+msgstr ""
+
+#: confessor/Application.js:220
+msgid "Updating"
+msgstr ""
+
+#: confessor/Application.js:242
+msgid "updated"
+msgstr ""
+
+#: confessor/Application.js:244
+msgid "unchanged"
+msgstr ""
