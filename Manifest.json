@@ -1,0 +1,34 @@
+{
+  "info" : 
+  {
+    "name" : "Confessor",
+
+    "summary" : "Simple client for http://zpovednice.cz/",
+    "description" : "Allows watch unreaded comments below selected posts without need to sign up/in",
+    
+    "homepage" : "http://duverne.info/zp/",
+
+    "license" : "Public Domain",
+    "authors" : 
+    [
+      {
+        "name" : "Jeden Blbec",
+        "email" : "jeden.blbec@gmail.com"
+      }
+    ],
+
+    "version" : "trunk",
+    "qooxdoo-versions": ["1.2-pre"]
+  },
+  
+  "provides" : 
+  {
+    "namespace"   : "confessor",
+    "encoding"    : "utf-8",
+    "class"       : "source/class",
+    "resource"    : "source/resource",
+    "translation" : "source/translation",
+    "type"        : "application"
+  }
+}
+

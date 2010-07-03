@@ -1,0 +1,56 @@
+{
+  "name"    : "confessor",
+
+  "include" :
+  [
+    {
+      "path" : "${QOOXDOO_PATH}/tool/data/config/application.json"
+    }
+  ],
+
+  "export" :
+  [
+    "api",
+    "build",
+    "clean",
+    "distclean",
+    "fix",
+    "info",
+    "inspector",
+    "lint",
+    "migration",
+    "pretty",
+    "profiling",
+    "source",
+    "source-all",
+    "test",
+    "test-source",
+    "translation"
+  ],
+
+  "let" :
+  {
+    "APPLICATION"  : "confessor",
+    "QOOXDOO_PATH" : "../qooxdoo/qooxdoo",
+    "API_EXCLUDE"  : ["qx.test.*"],
+    "LOCALES"      : [ "cs", "en" ],
+    "CACHE"        : "${TMPDIR}/cache",
+    "ROOT"         : "."
+  },
+
+  "jobs" :
+  {
+    "build-files" :
+    {
+      "copy-files" :
+      {
+        "files" :
+        [
+		  "fetch.php",
+		  "persistjs/persist.swf",
+		  "persistjs/persist-all-min.js"
+        ]
+      }
+    }
+  }
+}
