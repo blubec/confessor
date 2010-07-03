@@ -233,7 +233,7 @@ qx.Class.define('confessor.Application', {
 						for (var i = 0, l = data.length; i < l; i++) {
 							if (data[i][0] == obj.id) {
 								this._table.getTableModel().setValue(3, i, obj.comments);
-								obj.news = obj.comments - stored.comments;
+								obj.news += obj.comments - stored.comments;
 								this._table.getTableModel().setValue(4, i, obj.news);
 								this._store.set(obj.id, qx.util.Json.stringify(obj));
 								break;
