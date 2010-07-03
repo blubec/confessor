@@ -12,19 +12,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: confessor/Application.js:35
-msgid "request aborted"
+msgid "%1 request aborted"
 msgstr ""
 
 #: confessor/Application.js:38
-msgid "request failed"
+msgid "%1 request failed"
 msgstr ""
 
 #: confessor/Application.js:41
-msgid "sending request"
+msgid "%1 sending request"
 msgstr ""
 
 #: confessor/Application.js:44
-msgid "request timeout"
+msgid "%1 request timeout"
 msgstr ""
 
 #: confessor/Application.js:68
@@ -60,11 +60,11 @@ msgid "Confession number"
 msgstr ""
 
 #: confessor/Application.js:102
-msgid "is already saved"
+msgid "%1 is already saved"
 msgstr ""
 
 #: confessor/Application.js:104
-msgid "Trying to fetch"
+msgid "Trying to fetch %1"
 msgstr ""
 
 #: confessor/Application.js:111
@@ -92,7 +92,7 @@ msgid "Starting"
 msgstr ""
 
 #: confessor/Application.js:196
-msgid "added"
+msgid "%1 added"
 msgstr ""
 
 #: confessor/Application.js:199 confessor/Application.js:248
@@ -100,17 +100,17 @@ msgid "Confession not found"
 msgstr ""
 
 #: confessor/Application.js:213
-msgid "deleted"
+msgid "%1 deleted"
 msgstr ""
 
 #: confessor/Application.js:220
-msgid "Updating"
+msgid "Updating %1"
 msgstr ""
 
 #: confessor/Application.js:242
-msgid "updated"
+msgid "%1 updated"
 msgstr ""
 
 #: confessor/Application.js:244
-msgid "unchanged"
+msgid "%1 unchanged"
 msgstr ""

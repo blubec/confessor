@@ -12,20 +12,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: confessor/Application.js:35
-msgid "request aborted"
-msgstr "požadavek zrušen"
+msgid "%1 request aborted"
+msgstr "%1 požadavek zrušen"
 
 #: confessor/Application.js:38
-msgid "request failed"
-msgstr "požadavek selhal"
+msgid "%1 request failed"
+msgstr "%1 požadavek selhal"
 
 #: confessor/Application.js:41
-msgid "sending request"
-msgstr "odesílám požadavek"
+msgid "%1 sending request"
+msgstr "%1 odesílám požadavek"
 
 #: confessor/Application.js:44
-msgid "request timeout"
-msgstr "požadavek vypršel"
+msgid "%1 request timeout"
+msgstr "%1 požadavek vypršel"
 
 #: confessor/Application.js:68
 msgid "Ready"
@@ -60,12 +60,12 @@ msgid "Confession number"
 msgstr "Číslo zpovědi"
 
 #: confessor/Application.js:102
-msgid "is already saved"
-msgstr "už je uloženo"
+msgid "%1 is already saved"
+msgstr "%1 už je uloženo"
 
 #: confessor/Application.js:104
-msgid "Trying to fetch"
-msgstr "Zkouším načíst"
+msgid "Trying to fetch %1"
+msgstr "Zkouším načíst %1"
 
 #: confessor/Application.js:111
 msgid "View"
@@ -92,28 +92,28 @@ msgid "Starting"
 msgstr "Startuji"
 
 #: confessor/Application.js:196
-msgid "added"
-msgstr "přidáno"
+msgid "%1 added"
+msgstr "%1 přidáno"
 
 #: confessor/Application.js:199 confessor/Application.js:248
 msgid "Confession not found"
 msgstr "Zpověď nenalezena"
 
 #: confessor/Application.js:213
-msgid "deleted"
-msgstr "smazáno"
+msgid "%1 deleted"
+msgstr "%1 smazáno"
 
 #: confessor/Application.js:220
-msgid "Updating"
-msgstr "Aktualizuji"
+msgid "Updating %1"
+msgstr "Aktualizuji %1"
 
 #: confessor/Application.js:242
-msgid "updated"
-msgstr "aktualizováno"
+msgid "%1 updated"
+msgstr "%1 aktualizováno"
 
 #: confessor/Application.js:244
-msgid "unchanged"
-msgstr "nezměněno"
+msgid "%1 unchanged"
+msgstr "%1 nezměněno"
 
 msgid "one of one row"
 msgid_plural "%1 of %2 rows"

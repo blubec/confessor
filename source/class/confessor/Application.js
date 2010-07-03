@@ -32,16 +32,16 @@ qx.Class.define('confessor.Application', {
 				timeout : 20000
 			});
 			req.addListener('aborted', function() {
-				this._win.setStatus([id, this.tr('request aborted')].join(' '));
+				this._win.setStatus(this.tr('%1 request aborted', id));
 			}, this);
 			req.addListener('failed', function() {
-				this._win.setStatus([id, this.tr('request failed')].join(' '));
+				this._win.setStatus(this.tr('%1 request failed', id));
 			}, this);
 			req.addListener('sending', function() {
-				this._win.setStatus([id, this.tr('sending request')].join(' '));
+				this._win.setStatus(this.tr('%1 sending request', id));
 			}, this);
 			req.addListener('timeout', function() {
-				this._win.setStatus([id, this.tr('request timeout')].join(' '));
+				this._win.setStatus(this.tr('%1 request timeout', id));
 			}, this);
 			return req;
 		},
@@ -99,9 +99,9 @@ qx.Class.define('confessor.Application', {
 							ids = [];
 						}
 						if (qx.lang.Array.contains(ids, id)) {
-							this._win.setStatus([id, this.tr('is already saved')].join(' '));
+							this._win.setStatus(this.tr('%1 is already saved', id));
 						} else {
-							this._win.setStatus([this.tr('Trying to fetch'), id].join(' '));
+							this._win.setStatus(this.tr('Trying to fetch %1', id));
 							var req = this._createRequest(id);
 							req.addListener('completed', this._onAddRequest, this);
 							req.send();
@@ -193,7 +193,7 @@ qx.Class.define('confessor.Application', {
 						obj.comments,
 						obj.news
 					]], 0);
-					this._win.setStatus([obj.id, this.tr('added')].join(' '));
+					this._win.setStatus(this.tr('%1 added', obj.id));
 				}, this);
 			else
 				this._win.setStatus(this.tr('Confession not found'));
@@ -210,14 +210,14 @@ qx.Class.define('confessor.Application', {
 				qx.lang.Array.remove(ids, id);
 				this._store.set('ids', ids.join(','));
 			}, this);
-			this._win.setStatus([id, this.tr('deleted')].join(' '));
+			this._win.setStatus(this.tr('%1 deleted', id));
 		},
 
 		_onUpdateInterval : function() {
 			var id = qx.lang.Array.removeAt(this._queue, 0);
 			if (this._queue.length == 0)
 				this._timer.stop();
-			this._win.setStatus([this.tr('Updating'), id].join(' '));
+			this._win.setStatus(this.tr('Updating %1', id));
 			var req = this._createRequest(id);
 			req.addListener('completed', this._onUpdateRequest, this);
 			req.send();
@@ -239,9 +239,9 @@ qx.Class.define('confessor.Application', {
 								break;
 							}
 						}
-						this._win.setStatus([id, this.tr('updated')].join(' '));
+						this._win.setStatus(this.tr('%1 updated'));
 					} else {
-						this._win.setStatus([id, this.tr('unchanged')].join(' '));
+						this._win.setStatus(this.tr('%1 unchanged'));
 					}
 				}, this);
 			else
