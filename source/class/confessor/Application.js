@@ -239,9 +239,9 @@ qx.Class.define('confessor.Application', {
 								break;
 							}
 						}
-						this._win.setStatus(this.tr('%1 updated'));
+						this._win.setStatus(this.tr('%1 updated', obj.id));
 					} else {
-						this._win.setStatus(this.tr('%1 unchanged'));
+						this._win.setStatus(this.tr('%1 unchanged', obj.id));
 					}
 				}, this);
 			else
