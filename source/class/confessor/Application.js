@@ -131,11 +131,11 @@ qx.Class.define('confessor.Application', {
 			}, this);
 			this._table.getTableModel().addListener('dataChanged', function(e) {
 				var empty = e.getData().lastRow == -1;
-				updateButton.setEnabled(!empty && this._queue.length == 0);
 				if (empty) {
 					viewButton.setEnabled(false);
 					deleteButton.setEnabled(false);
-				}
+				} else
+					updateButton.setEnabled(true);
 			}, this);
 			this._table.getSelectionModel().addListener('changeSelection', function(e) {
 				var empty = this._table.getSelectionModel().isSelectionEmpty();
