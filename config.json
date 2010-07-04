@@ -51,6 +51,16 @@
 		  "persistjs/persist-all-min.js"
         ]
       }
+    },
+    "build-script" :
+    {
+      "compile-options" :
+      {
+        "paths"   :
+        {
+          "scripts-add-hash" : true
+        }
+	  }
     }
   }
 }
