@@ -4,6 +4,9 @@
 		 exit;
 	}
 
+	error_reporting(0);
+	set_time_limit(0);
+
 	$ch = curl_init();
 
 	curl_setopt_array($ch, array(
