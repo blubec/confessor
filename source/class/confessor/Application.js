@@ -287,6 +287,7 @@ qx.Class.define('confessor.Application', {
 			this._store.get(id, function(ok, val) {
 				var obj = qx.util.Json.parse(val.toString());
 				if (obj.news > 0) {
+					obj.news = 0;
 					var data = this._table.getTableModel().getData();
 					for (var i = 0, l = data.length; i < l; i++) {
 						if (data[i][0] == id) {
