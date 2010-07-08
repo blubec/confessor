@@ -30,7 +30,7 @@ qx.Class.define('confessor.Application', {
 
 		_createRequest : function(id) {
 			var req = new qx.io.remote.Request('fetch.php?id=' + id, 'GET', 'text/html').set({
-				timeout : 20000
+				timeout : 120000
 			});
 			req.addListener('aborted', function() {
 				this._win.setStatus(this.tr('%1 request aborted', id));
