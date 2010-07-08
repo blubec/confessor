@@ -11,106 +11,114 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: confessor/Application.js:35
+#: confessor/Application.js:36
 msgid "%1 request aborted"
 msgstr ""
 
-#: confessor/Application.js:38
+#: confessor/Application.js:39
 msgid "%1 request failed"
 msgstr ""
 
-#: confessor/Application.js:41
+#: confessor/Application.js:42
 msgid "%1 sending request"
 msgstr ""
 
-#: confessor/Application.js:44
+#: confessor/Application.js:45
 msgid "%1 request timeout"
 msgstr ""
 
-#: confessor/Application.js:68
+#: confessor/Application.js:69
 msgid "Ready"
 msgstr ""
 
-#: confessor/Application.js:70
+#: confessor/Application.js:71
 msgid "No saved confessions"
 msgstr ""
 
-#: confessor/Application.js:75
+#: confessor/Application.js:76
 msgid "Title"
 msgstr ""
 
-#: confessor/Application.js:76
+#: confessor/Application.js:77
 msgid "Author"
 msgstr ""
 
-#: confessor/Application.js:77
+#: confessor/Application.js:78
 msgid "Comments"
 msgstr ""
 
-#: confessor/Application.js:78
+#: confessor/Application.js:79
 msgid "News"
 msgstr ""
 
-#: confessor/Application.js:91
+#: confessor/Application.js:92
 msgid "New"
 msgstr ""
 
-#: confessor/Application.js:94
+#: confessor/Application.js:95
 msgid "Confession number"
 msgstr ""
 
-#: confessor/Application.js:102
+#: confessor/Application.js:103
 msgid "%1 is already saved"
 msgstr ""
 
-#: confessor/Application.js:104
+#: confessor/Application.js:105
 msgid "Trying to fetch %1"
 msgstr ""
 
-#: confessor/Application.js:111
+#: confessor/Application.js:112
 msgid "View"
 msgstr ""
 
-#: confessor/Application.js:115
+#: confessor/Application.js:116
 msgid "Delete"
 msgstr ""
 
-#: confessor/Application.js:119
+#: confessor/Application.js:120
+msgid "Zeroize"
+msgstr ""
+
+#: confessor/Application.js:124
 msgid "Update"
 msgstr ""
 
-#: confessor/Application.js:128
+#: confessor/Application.js:133
 msgid "Update started"
 msgstr ""
 
-#: confessor/Application.js:154
+#: confessor/Application.js:162
 msgid "Confessor"
 msgstr ""
 
-#: confessor/Application.js:160
+#: confessor/Application.js:168
 msgid "Starting"
 msgstr ""
 
-#: confessor/Application.js:196
+#: confessor/Application.js:204
 msgid "%1 added"
 msgstr ""
 
-#: confessor/Application.js:199 confessor/Application.js:248
+#: confessor/Application.js:207 confessor/Application.js:257
 msgid "Confession not found"
 msgstr ""
 
-#: confessor/Application.js:213
+#: confessor/Application.js:221
 msgid "%1 deleted"
 msgstr ""
 
-#: confessor/Application.js:220
+#: confessor/Application.js:228
 msgid "Updating %1"
 msgstr ""
 
-#: confessor/Application.js:242
+#: confessor/Application.js:251
 msgid "%1 updated"
 msgstr ""
 
-#: confessor/Application.js:244
+#: confessor/Application.js:253
 msgid "%1 unchanged"
+msgstr ""
+
+#: confessor/Application.js:269
+msgid "%1 zeroized"
 msgstr ""

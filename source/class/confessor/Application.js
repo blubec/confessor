@@ -3,6 +3,7 @@
 #asset(qx/icon/${qx.icontheme}/22/actions/document-new.png)
 #asset(qx/icon/${qx.icontheme}/22/actions/document-open.png)
 #asset(qx/icon/${qx.icontheme}/22/actions/dialog-close.png)
+#asset(qx/icon/${qx.icontheme}/22/actions/dialog-cancel.png)
 #asset(qx/icon/${qx.icontheme}/22/actions/view-refresh.png)
 */
 qx.Class.define('confessor.Application', {
@@ -116,6 +117,10 @@ qx.Class.define('confessor.Application', {
 				enabled : false
 			});
 			deleteButton.addListener('execute', this._onDeleteRequest, this);
+			var zeroizeButton = new qx.ui.toolbar.Button(this.tr('Zeroize'), 'icon/22/actions/dialog-cancel.png').set({
+				enabled : false
+			});
+			zeroizeButton.addListener('execute', this._onZeroizeRequest, this);
 			var updateButton = new qx.ui.toolbar.Button(this.tr('Update'), 'icon/22/actions/view-refresh.png').set({
 				enabled : (this._table.getTableModel().getData().length > 0) && this._queue.length == 0
 			});
@@ -134,6 +139,7 @@ qx.Class.define('confessor.Application', {
 				if (empty) {
 					viewButton.setEnabled(false);
 					deleteButton.setEnabled(false);
+					zeroizeButton.setEnabled(false);
 				} else
 					updateButton.setEnabled(true);
 			}, this);
@@ -141,11 +147,13 @@ qx.Class.define('confessor.Application', {
 				var empty = this._table.getSelectionModel().isSelectionEmpty();
 				viewButton.setEnabled(!empty);
 				deleteButton.setEnabled(!empty);
+				zeroizeButton.setEnabled(!empty);
 			}, this);
 			var toolbar = new qx.ui.toolbar.ToolBar();
 			toolbar.add(addButton);
 			toolbar.add(viewButton);
 			toolbar.add(deleteButton);
+			toolbar.add(zeroizeButton);
 			toolbar.add(updateButton);
 			return toolbar;
 		},
@@ -251,20 +259,14 @@ qx.Class.define('confessor.Application', {
 
 		_onViewRequest : function() {
 			var id = this._getSelectedId();
-			this._store.get(id, function(ok, val) {
-				var obj = qx.util.Json.parse(val.toString());
-				if (obj.news > 0) {
-					var data = this._table.getTableModel().getData();
-					for (var i = 0, l = data.length; i < l; i++) {
-						if (data[i][0] == id) {
-							this._table.getTableModel().setValue(4, i, 0);
-							this._store.set(obj.id, qx.util.Json.stringify(obj));
-							break;
-						}
-					}
-				}
-			}, this);
+			this._zeroize(id);
 			window.open('http://zpovednice.cz/detail.php?statusik=' + id, '_blank');
+		},
+
+		_onZeroizeRequest : function() {
+			var id = this._getSelectedId();
+			this._zeroize(id);
+			this._win.setStatus(this.tr('%1 zeroized', id));
 		},
 
 		_parse : function(content) {
@@ -279,6 +281,22 @@ qx.Class.define('confessor.Application', {
 					news : 0
 				};
 			return false;
+		},
+
+		_zeroize : function(id) {
+			this._store.get(id, function(ok, val) {
+				var obj = qx.util.Json.parse(val.toString());
+				if (obj.news > 0) {
+					var data = this._table.getTableModel().getData();
+					for (var i = 0, l = data.length; i < l; i++) {
+						if (data[i][0] == id) {
+							this._table.getTableModel().setValue(4, i, 0);
+							this._store.set(obj.id, qx.util.Json.stringify(obj));
+							break;
+						}
+					}
+				}
+			}, this);
 		}
 	}
 });
