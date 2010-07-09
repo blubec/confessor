@@ -24,7 +24,7 @@ qx.Class.define('confessor.Application', {
 
 			this.getRoot().add(this._createWindow());
 
-			this._timer = new qx.event.Timer(5000);
+			this._timer = new qx.event.Timer();
 			this._timer.addListener('interval', this._onUpdateInterval, this);
 		},
 
