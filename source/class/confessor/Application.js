@@ -29,22 +29,9 @@ qx.Class.define('confessor.Application', {
 		},
 
 		_createRequest : function(id) {
-			var req = new qx.io.remote.Request('fetch.php?id=' + id, 'GET', 'text/html').set({
+			return new qx.io.remote.Request('fetch.php?id=' + id, 'GET', 'text/html').set({
 				timeout : 120000
 			});
-			req.addListener('aborted', function() {
-				this._win.setStatus(this.tr('%1 request aborted', id));
-			}, this);
-			req.addListener('failed', function() {
-				this._win.setStatus(this.tr('%1 request failed', id));
-			}, this);
-			req.addListener('sending', function() {
-				this._win.setStatus(this.tr('%1 sending request', id));
-			}, this);
-			req.addListener('timeout', function() {
-				this._win.setStatus(this.tr('%1 request timeout', id));
-			}, this);
-			return req;
 		},
 
 		_createTable : function() {
@@ -130,7 +117,6 @@ qx.Class.define('confessor.Application', {
 					if (!qx.lang.Array.contains(this._queue, data[i][0]))
 						this._queue.push(data[i][0]);
 				}
-				this._win.setStatus(this.tr('Update started'));
 				if (!this._timer.isEnabled())
 					this._timer.start();
 			}, this);
@@ -218,14 +204,12 @@ qx.Class.define('confessor.Application', {
 				qx.lang.Array.remove(ids, id);
 				this._store.set('ids', ids.join(','));
 			}, this);
-			this._win.setStatus(this.tr('%1 deleted', id));
 		},
 
 		_onUpdateInterval : function() {
 			var id = qx.lang.Array.removeAt(this._queue, 0);
 			if (this._queue.length == 0)
 				this._timer.stop();
-			this._win.setStatus(this.tr('Updating %1', id));
 			var req = this._createRequest(id);
 			req.addListener('completed', this._onUpdateRequest, this);
 			req.send();
@@ -249,8 +233,6 @@ qx.Class.define('confessor.Application', {
 							}
 						}
 						this._win.setStatus(this.tr('%1 updated', obj.id));
-					} else {
-						this._win.setStatus(this.tr('%1 unchanged', obj.id));
 					}
 				}, this);
 			else
@@ -264,9 +246,7 @@ qx.Class.define('confessor.Application', {
 		},
 
 		_onZeroizeRequest : function() {
-			var id = this._getSelectedId();
-			this._zeroize(id);
-			this._win.setStatus(this.tr('%1 zeroized', id));
+			this._zeroize(this._getSelectedId());
 		},
 
 		_parse : function(content) {

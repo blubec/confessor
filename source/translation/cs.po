@@ -11,117 +11,81 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: confessor/Application.js:36
-msgid "%1 request aborted"
-msgstr "%1 požadavek zrušen"
-
-#: confessor/Application.js:39
-msgid "%1 request failed"
-msgstr "%1 požadavek selhal"
-
-#: confessor/Application.js:42
-msgid "%1 sending request"
-msgstr "%1 odesílám požadavek"
-
-#: confessor/Application.js:45
-msgid "%1 request timeout"
-msgstr "%1 požadavek vypršel"
-
-#: confessor/Application.js:69
+#: confessor/Application.js:56
 msgid "Ready"
 msgstr "Připraven"
 
-#: confessor/Application.js:71
+#: confessor/Application.js:58
 msgid "No saved confessions"
 msgstr "Žádné uložené zpovědi"
 
-#: confessor/Application.js:76
+#: confessor/Application.js:63
 msgid "Title"
 msgstr "Nadpis"
 
-#: confessor/Application.js:77
+#: confessor/Application.js:64
 msgid "Author"
 msgstr "Autor"
 
-#: confessor/Application.js:78
+#: confessor/Application.js:65
 msgid "Comments"
 msgstr "Komentáře"
 
-#: confessor/Application.js:79
+#: confessor/Application.js:66
 msgid "News"
 msgstr "Novinky"
 
-#: confessor/Application.js:92
+#: confessor/Application.js:79
 msgid "New"
 msgstr "Přidat"
 
-#: confessor/Application.js:95
+#: confessor/Application.js:82
 msgid "Confession number"
 msgstr "Číslo zpovědi"
 
-#: confessor/Application.js:103
+#: confessor/Application.js:90
 msgid "%1 is already saved"
 msgstr "%1 už je uloženo"
 
-#: confessor/Application.js:105
+#: confessor/Application.js:92
 msgid "Trying to fetch %1"
 msgstr "Zkouším načíst %1"
 
-#: confessor/Application.js:112
+#: confessor/Application.js:99
 msgid "View"
 msgstr "Ukázat"
 
-#: confessor/Application.js:116
+#: confessor/Application.js:103
 msgid "Delete"
 msgstr "Smazat"
 
-#: confessor/Application.js:120
+#: confessor/Application.js:107
 msgid "Zeroize"
 msgstr "Vynulovat"
 
-#: confessor/Application.js:124
+#: confessor/Application.js:111
 msgid "Update"
 msgstr "Aktualizovat"
 
-#: confessor/Application.js:133
-msgid "Update started"
-msgstr "Zahájena aktualizace"
-
-#: confessor/Application.js:162
+#: confessor/Application.js:148
 msgid "Confessor"
 msgstr "Zpovědník"
 
-#: confessor/Application.js:168
+#: confessor/Application.js:154
 msgid "Starting"
 msgstr "Startuji"
 
-#: confessor/Application.js:204
+#: confessor/Application.js:190
 msgid "%1 added"
 msgstr "%1 přidáno"
 
-#: confessor/Application.js:207 confessor/Application.js:257
+#: confessor/Application.js:193 confessor/Application.js:239
 msgid "Confession not found"
 msgstr "Zpověď nenalezena"
 
-#: confessor/Application.js:221
-msgid "%1 deleted"
-msgstr "%1 smazáno"
-
-#: confessor/Application.js:228
-msgid "Updating %1"
-msgstr "Aktualizuji %1"
-
-#: confessor/Application.js:251
+#: confessor/Application.js:235
 msgid "%1 updated"
 msgstr "%1 aktualizováno"
-
-#: confessor/Application.js:253
-msgid "%1 unchanged"
-msgstr "%1 nezměněno"
-
-#: confessor/Application.js:269
-msgid "%1 zeroized"
-msgstr "%1 vynulováno"
 
 msgid "one of one row"
 msgid_plural "%1 of %2 rows"
